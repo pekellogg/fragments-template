@@ -1,13 +1,12 @@
 import Button from "./Button";
 import Card from "./Card";
-import Wrapper from "../helpers/Wrapper";
 
 import classes from "./ErrorModal.module.css";
 
 const ErrorModal = (props) => {
 
   return (
-    <Wrapper>
+    <>
       <div
         className={classes.backdrop}
         onClick={props.onConfirm}
@@ -29,7 +28,7 @@ const ErrorModal = (props) => {
           </Button>
         </footer>
       </Card>
-    </Wrapper>
+    </>
   );
 
 };
